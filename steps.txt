@@ -1,0 +1,26 @@
+1. Extract subtitles
+decipher transcribe -i v.mp4 --model medium -o ./output/srt
+
+2. Extract audio from video
+python ./scripts/video2audio.py -i v.mp4 -o ./output/a.wav
+
+3. Separate vocals and background music 
+python ./vocal_remover/inference.py -i ./output/a.wav -o ./output/vocal_remover
+
+4. Split audio file into separate dialogues
+python ./scripts/split_audio.py -i ./output/vocal_remover/a_Vocals.wav -srt ./output/srt/v.srt -o ./output/split_audio
+
+5. Convert original speech to target speech using VALLE-X
+python ./scripts/convert_audio.py -converter vallex/infer.py -split ./output/split_audio -srt ./output/srt/v.srt -srt-converted ./output/srt/v_converted.srt -out output/convert_audio
+
+6. Combine multiple audio files in one file
+python ./scripts/combine.py -i ./output/convert_audio -srt ./output/srt/v_converted.srt -o ./output/combine.wav -original ./output/a.wav
+
+7. Add background music to the combined file
+python ./scripts/add_background.py -convert ./output/convert_audio -srt ./output/srt/v.srt -combine ./output/combine.wav -original ./output/a.wav -background ./output/vocal_remover/a_Instruments.wav -o ./output/mixed.wav
+
+8. Add sound to video
+python ./scripts/set_sound.py -i ./v.mp4 -audio ./output/mixed.wav -o ./output/final/final.mp4
+
+9. Reconvert
+python ./scripts/reconvert.py -converter vallex/infer.py -split ./output/split_audio -srt ./output/srt/v.srt -srt-converted ./output/srt/v_converted.srt -out output/convert_audio -reconvert 0
