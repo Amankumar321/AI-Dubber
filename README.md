@@ -22,19 +22,11 @@ Refer to folder /final_videos for original and converted videos
 Chinese -
 
 
-<figure class="video_container">
- <video controls="true" allowfullscreen="true">
- <source src="./final_videos/v-4.mp4" type="video/mp4">
- </video>
-</figure>
+[Watch the video](final_videos/v-4.mp4)
 
 
 
 English -
 
 
-<figure class="video_container">
- <video controls="true" allowfullscreen="true">
- <source src="./final_videos/final-4.mp4" type="video/mp4">
- </video>
-</figure>
+[Watch the video](final_videos/final-4.mp4)
