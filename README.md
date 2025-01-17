@@ -22,7 +22,10 @@ Refer to folder /final_videos for original and converted videos
 Chinese -
 
 
-https://github.com/Amankumar321/AI-Dubber/assets/76520634/4876e4bc-0802-497a-8567-523de887891e
+
+
+https://github.com/user-attachments/assets/201bd47a-bef8-4af1-80d4-903dabf5914c
+
 
 
 
@@ -30,4 +33,5 @@ https://github.com/Amankumar321/AI-Dubber/assets/76520634/4876e4bc-0802-497a-856
 English -
 
 
-https://github.com/Amankumar321/AI-Dubber/assets/76520634/aa4cf6f8-0b7f-402c-8913-e055bb68eba2
+https://github.com/user-attachments/assets/f79031f2-5f21-4cba-abc1-f2d484db0992
+
