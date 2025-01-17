@@ -23,12 +23,10 @@ try downloading the video and run it with VS code or converting it to any other 
 Chinese -
 
 
-https://github.com/Amankumar321/AI-Dubber/blob/49702963e8ae749bf1bcfba834e81ce264818309/final_videos/v-4.mp4
-
+[![Watch the video]](https://github.com/Amankumar321/AI-Dubber/blob/49702963e8ae749bf1bcfba834e81ce264818309/final_videos/v-4.mp4)
 
 
 
 English -
 
-
-https://github.com/Amankumar321/AI-Dubber/blob/49702963e8ae749bf1bcfba834e81ce264818309/final_videos/final-4.mp4
+[![Watch the video]](https://github.com/Amankumar321/AI-Dubber/blob/49702963e8ae749bf1bcfba834e81ce264818309/final_videos/final-4.mp4)
